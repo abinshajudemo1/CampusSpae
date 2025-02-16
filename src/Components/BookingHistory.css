@@ -1,0 +1,159 @@
+/* General Styles */
+#booking-history-page-wrapper {
+    min-height: 100vh;
+    background-image: url('../images/venuebg.png'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* White text */
+    padding: 20px;
+  }
+  
+  /* Header */
+  #header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(26, 26, 46, 0.9); /* Semi-transparent Dark Blue */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #header-left {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e94560; /* Coral Pink */
+  }
+  
+  /* Booking History Page */
+  .booking-history-page {
+    background-color: rgba(26, 26, 46, 0.9); /* Semi-transparent Dark Blue */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .booking-history-page h2 {
+    font-size: 2rem;
+    color: #e94560; /* Coral Pink */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .booking-history-page p {
+    text-align: center;
+    color: #ffffff; /* White text */
+    margin-bottom: 20px;
+  }
+  
+  /* Booking List */
+  .booking-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Booking Row */
+  .booking-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent White */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+  }
+  
+  .booking-info {
+    font-size: 1rem;
+    color: #ffffff; /* White text */
+  }
+  
+  /* Status Box */
+  .status-box {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    min-width: 80px;
+  }
+  
+  .status-box.pending {
+    background-color: #ffc107; /* Yellow */
+    color: #1a1a2e; /* Dark Blue */
+  }
+  
+  .status-box.approved {
+    background-color: #28a745; /* Green */
+    color: #ffffff; /* White */
+  }
+  
+  .status-box.rejected {
+    background-color: #dc3545; /* Red */
+    color: #ffffff; /* White */
+  }
+  
+  /* Cancel Button */
+  .cancel-button {
+    background-color: #e94560; /* Coral Pink */
+    color: #ffffff; /* White */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d1344e; /* Darker Coral Pink */
+  }
+  
+  /* Footer */
+  #footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff; /* White text */
+  }
+  
+  /* Error and Success Messages */
+  .error-message {
+    color: #dc3545; /* Red */
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .success-message {
+    color: #28a745; /* Green */
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .booking-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .status-box {
+      align-self: flex-start;
+    }
+  
+    .cancel-button {
+      align-self: flex-start;
+    }
+  }

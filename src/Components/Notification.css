@@ -1,0 +1,165 @@
+/* General Container */
+#notification-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #1a1a2e; /* Dark Blue */
+  color: #ffffff; /* White */
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Page Heading */
+#notification-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #e94560; /* Coral Pink */
+  margin-bottom: 20px;
+}
+
+/* Create New Notification Button */
+.notification-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+#create-notification-btn {
+  padding: 10px 20px;
+  background-color: #e94560; /* Coral Pink */
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #ffffff; /* White */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#create-notification-btn:hover {
+  background-color: #d1344f; /* Darker Coral Pink */
+}
+
+/* Form Styles */
+#notification-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff; /* White */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff; /* White */
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #e94560; /* Coral Pink */
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  color: #ffffff; /* White */
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit-button,
+#cancel-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  background-color: #e94560; /* Coral Pink */
+  color: #ffffff; /* White */
+  width: 48%;
+  transition: background-color 0.3s ease;
+}
+
+#submit-button:hover,
+#cancel-button:hover {
+  background-color: #d1344f; /* Darker Coral Pink */
+}
+
+/* Notification List Styles */
+#notifications-list {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.notification-item {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border: 1px solid #e94560; /* Coral Pink */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.notification-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.notification-item h4 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #ffffff; /* White */
+  flex-grow: 1;
+}
+
+.notification-item p {
+  font-size: 1rem;
+  color:rgb(32, 31, 31); /* White */
+}
+
+/* Icon Styles */
+.notification-item .icon {
+  font-size: 2rem;
+  color: #e94560; /* Coral Pink */
+}
+
+/* Action Buttons */
+.action-btn {
+  background-color: #e94560; /* Coral Pink */
+  color: #ffffff; /* White */
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn:hover {
+  background-color: #d1344f; /* Darker Coral Pink */
+}

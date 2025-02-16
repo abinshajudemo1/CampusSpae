@@ -1,0 +1,27 @@
+.teacher-review-requests {
+    padding: 20px;
+  }
+  
+  .requests-table {
+    margin-top: 20px;
+  }
+  
+  .approve-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .approve-button:hover {
+    background-color: #45a049;
+  }
+  
+  .error {
+    color: #e94560;
+    padding: 20px;
+    text-align: center;
+  }

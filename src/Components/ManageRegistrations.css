@@ -1,0 +1,157 @@
+/* General Container */
+#manage-registrations-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a2e; /* Dark Blue */
+  color: #ffffff; /* White */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Page Heading */
+.page-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #e94560; /* Coral Pink */
+  margin-bottom: 30px;
+}
+
+/* Loading and Error Messages */
+.loading-message,
+.error-message,
+.no-registrations-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffffff; /* White */
+}
+
+/* Table Container */
+.registrations-table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+/* Table Styling */
+.registrations-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+}
+
+.registrations-table th,
+.registrations-table td {
+  padding: 12px;
+  text-align: center;
+  font-size: 1rem;
+  color: #ffffff; /* White */
+}
+
+.registrations-table th {
+  background-color: #e94560; /* Coral Pink */
+  font-weight: bold;
+}
+
+.registrations-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05); /* Slightly lighter for even rows */
+}
+
+.registrations-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+}
+
+.registrations-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light border */
+}
+
+/* Status Dropdown */
+.status-dropdown {
+  padding: 8px;
+  width: 150px;
+  font-size: 1rem;
+  color: #1a1a2e; /* Dark Blue */
+  border-radius: 5px;
+  border: 1px solid #e94560; /* Coral Pink */
+  background-color: #ffffff; /* White */
+  transition: border-color 0.3s ease;
+}
+
+.status-dropdown:focus {
+  outline: none;
+  border-color: #e94560; /* Coral Pink */
+}
+
+/* Message Input */
+.message-input {
+  width: 200px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #e94560; /* Coral Pink */
+  background-color: #ffffff; /* White */
+  color: #1a1a2e; /* Dark Blue */
+  transition: border-color 0.3s ease;
+}
+
+.message-input:focus {
+  outline: none;
+  border-color: #e94560; /* Coral Pink */
+}
+
+/* Button Styling */
+.submit-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff; /* White */
+  background-color: #e94560; /* Coral Pink */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+}
+
+.submit-button:hover {
+  background-color: #d1344f; /* Darker Coral Pink */
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.submit-button:disabled:hover {
+  background-color: #ccc;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  #manage-registrations-container {
+    padding: 10px;
+  }
+
+  .page-heading {
+    font-size: 1.6rem;
+  }
+
+  .registrations-table th,
+  .registrations-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .status-dropdown {
+    width: 120px;
+  }
+
+  .message-input {
+    width: 150px;
+  }
+
+  .submit-button {
+    width: 90px;
+  }
+}

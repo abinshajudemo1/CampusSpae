@@ -1,0 +1,168 @@
+/* General Styles */
+.eve-page {
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a2e; /* Dark Blue */
+  color: #ffffff; /* White text */
+  position: relative;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/venuebg.png'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(50%); /* Darken the background */
+  z-index: -1;
+}
+
+/* Header */
+#custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(26, 26, 46, 0.8); /* Semi-transparent Dark Blue */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.text-logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #e94560; /* Coral Pink */
+  margin: 0;
+}
+
+#custom-header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Register Button */
+.register-btn-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.register-button {
+  background-color: #e94560; /* Coral Pink */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #d1344e; /* Darker Coral Pink */
+}
+
+.register-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 20px;
+  max-width: 800px;
+  color: #ffffff; /* White text */
+}
+
+/* Events Container */
+.eve-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.eve-card {
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent White */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eve-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.eve-info {
+  margin-bottom: 20px;
+}
+
+.eve-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #e94560; /* Coral Pink */
+  margin-bottom: 10px;
+}
+
+.event-meta {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ffffff; /* White text */
+}
+
+.event-meta strong {
+  color: #e94560; /* Coral Pink */
+}
+
+.event-meta ul {
+  list-style-position: inside;
+  padding-left: 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+/* Event Images */
+.eve-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.eve-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.eve-image:hover {
+  transform: scale(1.05);
+}
+
+/* Image Popup */
+.image-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}

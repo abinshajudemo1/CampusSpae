@@ -1,0 +1,88 @@
+/* General Container */
+#manage-users {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1a1a2e; /* Dark Blue */
+  color: #ffffff; /* White */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Page Heading */
+#manage-users-heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #e94560; /* Coral Pink */
+  margin-bottom: 30px;
+}
+
+/* Loading and Error Messages */
+#loading-message,
+#error-message,
+#no-users-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #ffffff; /* White */
+}
+
+/* User List */
+#users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* User Headings */
+.user-headings {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-color: #e94560; /* Coral Pink */
+  border-radius: 8px;
+  font-weight: bold;
+  color: #ffffff; /* White */
+}
+
+/* User Card */
+.user-card {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.user-card:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect */
+}
+
+.user-card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff; /* White */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-headings,
+  .user-card {
+    grid-template-columns: repeat(4, 1fr); /* Adjust for smaller screens */
+  }
+
+  .user-headings span,
+  .user-card span {
+    font-size: 0.8rem;
+  }
+
+  #manage-users-heading {
+    font-size: 1.6rem;
+  }
+}

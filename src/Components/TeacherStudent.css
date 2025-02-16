@@ -1,0 +1,29 @@
+.teacher-students {
+    padding: 20px;
+  }
+  
+  .students-table {
+    margin-top: 20px;
+  }
+  
+  .table-header, .table-row {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .table-header {
+    font-weight: bold;
+    background-color: rgba(233, 69, 96, 0.1);
+  }
+  
+  .status-button.active {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
